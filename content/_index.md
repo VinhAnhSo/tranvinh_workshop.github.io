@@ -7,20 +7,18 @@ chapter: false
 
 # Internship Report - First Cloud AI Journey
 
-### 1. Student Information
-&emsp; **Full Name:** Vo Tan Phat
+### Student Information:
+&emsp; **Full Name:** Tran Vinh
 
-&emsp; **Role:** Team Lead - AI Engineer
+&emsp; **Phone Number:** 0978157087 
 
-&emsp; **Phone Number:** 0799224453
+&emsp; **Email:** vinhran5496@gmail.com
 
-&emsp; **Email:** votanphata2.c3hn2022@gmail.com
+&emsp; **University:** FPT University, Ho Chi Minh Campus
 
-&emsp; **University:** FPT University
+&emsp; **Major:** Information Technology
 
-&emsp; **Major:** Artificial Intelligence
-
-&emsp; **Internship Company:** Amazon Web Services Vietnam
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
 &emsp; **Program:** First Cloud AI Journey (FCJ 2026)
 
@@ -28,25 +26,10 @@ chapter: false
 
 &emsp; **Internship Period:** 05/01/2026 – 18/04/2026
 
-![Avatar](/images/avatar.jpg)
+![Avatar](/images/1.jpg)
 
 ---
-
-### 2. Team TheBois Information
-Below is the organizational structure and professional distribution of the team:
-
-| No. | Full Name | Role | Track |
-|:---:|:---|:---|:---|
-| **1** | **Vo Tan Phat** | **Leader** | **AI** |
-| 2 | Duong Nguyen Binh | Member | AI |
-| 3 | Nguyen Duc Tri | Member | IA |
-| 4 | Tran Vinh | Member | IA |
-| 5 | Nguyen Duy Tung | Member | IA |
-| 6 | Bui Minh Hien | Member | IA |
-
----
-
-### 3. Report Content
+### Report Content
 
 1.  [Worklog](1-Worklog/)
 2.  [Proposal](2-Proposal/)

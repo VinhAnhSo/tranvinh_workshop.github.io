@@ -1,42 +1,43 @@
 ---
-title: "Week 12: GuardScript — Documentation Finalization, Validation & Demo Readiness"
-date: 2026-03-27
+title: "Week 12 Worklog"
+date: 2026-04-13
 weight: 12
 chapter: false
-pre: " <b> 1.12. </b> "
+pre: "<b>1.12.</b> "
 ---
 
-### 1. Objectives
+### Week 12 Objectives:
+- Understand cost optimization techniques in AWS.
+- Learn performance tuning approaches for cloud applications.
+- Explore disaster recovery planning and resilience strategies.
+- Build a hands-on production-ready architecture following AWS best practices.
 
-* Finalize proposal/worklog alignment with real implementation and FCJ standards.
-* Confirm end-to-end deployment flow and operational validation points.
-* Add cleanup and cost-awareness guidance for workshop/demo execution.
+### Tasks to be carried out this week:
 
-### 2. Weekly Tasks Breakdown
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Learn AWS cost optimization concepts<br>- Explore methods to reduce unnecessary resource usage<br>- Understand cost-aware architecture decisions | 14/04/2026 | 14/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Study performance tuning techniques<br>- Learn how to improve efficiency, responsiveness, and scalability<br>- Explore performance-related best practices in AWS | 15/04/2026 | 15/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Learn disaster recovery planning concepts<br>- Understand backup, recovery, and availability strategies<br>- Explore business continuity considerations in cloud systems | 16/04/2026 | 16/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Hands-on:** Build a production-ready architecture<br>&emsp;+ Apply cost optimization considerations<br>&emsp;+ Review performance and scalability design<br>&emsp;+ Incorporate disaster recovery planning | 17/04/2026 | 17/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Day | Main Task | Technical Details | Status |
-|:---:|:---|:---|:---:|
-| **Mon** | **Proposal Normalization** | - Updated architecture, service flow, and security claims against current IaC and source code.<br>- Removed statements without clear implementation evidence. | Completed |
-| **Tue** | **Worklog Normalization** | - Mapped weekly outcomes to concrete modules (auth, loader, license, infra).<br>- Standardized report language with FCJ format. | Completed |
-| **Wed** | **Deployment Review** | - Verified SAM deployment flow.<br>- Verified frontend S3 sync and CloudFront invalidation workflow. | Completed |
-| **Thu** | **Monitoring Baseline Review** | - Confirmed CloudWatch alarms/dashboard resources.<br>- Reviewed log retention and operational outputs. | Completed |
-| **Fri** | **Demo Validation & Cleanup Checklist** | - Finalized validation checklist for demo execution.<br>- Added cleanup guidance to reduce post-demo cloud costs. | Completed |
+### Week 12 Achievements:
+- Developed a broader understanding of AWS best practices related to cost management, performance improvement, and system resilience in production environments.
+- Learned how cost optimization techniques can help reduce unnecessary spending by selecting suitable services, controlling resource usage, and improving architectural efficiency.
+- Improved awareness of how financial considerations influence cloud design decisions, especially when balancing cost, scalability, and operational requirements.
+- Explored performance tuning concepts and gained knowledge of how cloud applications can be optimized for better responsiveness, efficiency, and overall system stability.
+- Studied the importance of identifying bottlenecks, reviewing resource utilization, and applying design improvements to support high-performing cloud workloads.
+- Learned core disaster recovery concepts, including backup strategies, recovery planning, availability design, and the role of resilience in business continuity.
+- Improved understanding of how production systems should be prepared not only for normal operations but also for service disruptions, failures, and recovery scenarios.
+- Applied these concepts in a production-ready architecture exercise, which helped connect cost optimization, performance tuning, and disaster recovery planning into one complete design perspective.
+- Strengthened overall understanding of production-readiness in AWS, especially the need to build systems that are efficient, scalable, reliable, and aligned with operational best practices.
 
-### 3. Key Results
+### Projects:
+#### 5. E-commerce Platform
+- Architecture: Multi-tier architecture
+- Features: Auto-scaling, load balancing
+- Estimated cost: approximately \$45/month
 
-* Proposal now reflects implementation-backed claims.
-* Worklog entries now include technical outputs instead of generic statements.
-* End-to-end deployment workflow is clearly documented for reproducibility.
-* Monitoring baseline is documented with concrete alarm/dashboard resources.
-* Cleanup guidance is prepared to reduce leftover resource cost after demos.
-
-### 4. Issues & Solutions
-
-* **Issue:** Some previous report sections overclaimed implementation scope.
-* **Solution:** Reworked proposal/worklog using evidence-based claims and explicit follow-up placeholders.
-
-### 5. Next Steps
-
-* Prepare final demo narrative by FCJ rubric (architecture, implementation, validation, cleanup).
-* Insert selected code snippets into proposal/workshop pages.
-* Continue resolving all proposal placeholders marked as **[INFO NEEDED]**.
+#### 6. Data Analytics Pipeline
+- Architecture: S3 + Glue + Athena + QuickSight
+- Estimated cost: approximately \$25/month

@@ -1,43 +1,31 @@
 ---
-title: "Week 1: Onboarding & Setup Environment"
+title: "Week 1 Worklog"
 date: 2026-01-05
 weight: 1
 chapter: false
-pre: " <b> 1.1. </b> "
+pre: "<b>1.1.</b> "
 ---
 
-### 1. Objectives
+### Week 1 Objectives:
+- Connect and get acquainted with team members.
+- Understand basic AWS services and learn how to use the AWS Console and AWS CLI.
 
-* **Onboarding:** Connect with FCJ members, understand company culture and regulations.
-* **Technical:** Set up AWS environment (Account, CLI) and complete basic practical labs (Explore AWS).
-* **Management (Team Lead):** Establish working infrastructure and assign roles for Team **TheBois**.
+### Tasks to be carried out this week:
 
-### 2. Weekly Tasks Breakdown
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Get acquainted with team members<br>- Read and take notes on the internship unit's rules and regulations<br>- Participate in the kickoff session and have the opportunity to meet AWS mentors and leaders | 06/01/2026 | 06/01/2026 | |
+| 3 | - Learn about AWS and its main service categories<br>&emsp;+ Compute<br>&emsp;+ Storage<br>&emsp;+ Networking<br>&emsp;+ Database<br>&emsp;+ ... | 07/01/2026 | 07/01/2026 | <https://000001.awsstudygroup.com/en//> |
+| 4 | - Create an AWS Free Tier account<br>- Learn about the AWS Console and AWS CLI<br>- Get familiar with basic operations in the AWS environment | 08/01/2026 | 08/01/2026 | <https://000001.awsstudygroup.com/en//> |
+| 5 | - **Practice:**<br>&emsp;+ Learn basic EC2 concepts<br>&emsp;+ Connect to EC2 via SSH<br>&emsp;+ Learn about Elastic IP and attach an EBS volume | 09/01/2026 | 09/01/2026 | <https://000007.awsstudygroup.com/en//> |
 
-| Day | Main Task | Details | Status |
-|:---:|:---|:---|:---:|
-| **Mon** | **Onboarding** | - Networking with FCJ members.<br>- Reading and researching internship regulations and workflows. | Completed |
-| **Tue** | **AWS Overview** | - Researching foundational AWS service groups:<br>&nbsp;+ Compute (EC2, Lambda)<br>&nbsp;+ Storage (S3, EBS)<br>&nbsp;+ Database (RDS, DynamoDB)<br>&nbsp;+ Networking (VPC) | Completed |
-| **Wed** | **Setup Environment** | - Creating AWS Free Tier account.<br>- Installing and configuring **AWS CLI** on local machine.<br>- Connecting terminal to AWS account via Access Key/Secret Key. | Completed |
-| **Thu** | **Explore AWS Labs** | - Completed **5/5 activities** in "Explore AWS" section to earn Credits:<br>&nbsp;1. Create an Aurora/RDS database<br>&nbsp;2. Create a Web App using AWS Lambda<br>&nbsp;3. Set up a cost budget using AWS Budgets<br>&nbsp;4. Use a foundation model in **Amazon Bedrock**<br>&nbsp;5. Launch an EC2 Instance | Completed |
-| **Fri** | **Team Management** | - **Setup Communication:** Created Discord server and set up discussion channels.<br>- **Setup Source Control:** Initialized GitHub Organization/Repo for Team TheBois.<br>- **Role Division:** Conducted team meeting, assigned specific roles (AI, IA, Cyber, Backend) to members. | Completed |
-
-### 3. Key Results (Deliverables)
-
-#### Technical:
-* **Environment:** Successfully configured AWS CLI, ensuring smooth interaction with AWS from local machine.
-* **Practice:** Achieved **100% (5/5)** completion of AWS starter labs:
-    * Experienced deploying AI models on **Amazon Bedrock**.
-    * Successfully deployed a serverless app with **Lambda**.
-    * Initialized database and EC2 instance.
-    * Set up cost alerts (Budgets) for resource management.
-
-#### Management (Team TheBois):
-* **Infrastructure:** Established a shared workspace on Discord.
-    * Created a GitHub Repo for managing upcoming project source code.
-* **Personnel:** All members (Binh, Tri, Hien, Tung, Vinh) clearly understand their roles and responsibilities.
-
-### 4. Issues & Solutions
-* **Issue:** Initial difficulties with IAM User permissions.
-* **Solution:** Read "AWS IAM Best Practices" documentation and reconfigured Policies accordingly.
-
+### Week 1 Achievements:
+- Completed the initial onboarding process and became familiar with the internship environment, team members, mentors, and program leaders.
+- Understood the internship unit's rules and regulations, which provided a clearer direction for participation and learning throughout the internship.
+- Gained an overall understanding of AWS and its core service categories, including Compute, Storage, Networking, and Database.
+- Successfully created an AWS Free Tier account to support hands-on practice in the following weeks.
+- Became familiar with the AWS Management Console and developed an initial understanding of how to use the AWS CLI to interact with AWS services.
+- Learned the basic concepts of Amazon EC2, including the role of virtual servers in a cloud environment.
+- Understood SSH connection methods for EC2 and the role of Elastic IP in providing a persistent public IP address.
+- Completed basic hands-on tasks such as exploring EC2, connecting remotely via SSH, and understanding how to attach an EBS volume for additional storage.
+- Built a foundational understanding of AWS that will support more advanced learning in the coming weeks.

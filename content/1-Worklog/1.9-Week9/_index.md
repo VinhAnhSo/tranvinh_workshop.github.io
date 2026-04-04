@@ -1,45 +1,33 @@
 ---
-title: "Week 9: GuardScript — AWS Migration & Comprehensive UI Improvements"
-date: 2026-03-16
+title: "Week 9 Worklog"
+date: 2026-03-23
 weight: 9
 chapter: false
-pre: " <b> 1.9. </b> "
+pre: "<b>1.9.</b> "
 ---
 
-### 1. Objectives
+### Week 9 Objectives:
+- Understand VPC Peering and AWS Transit Gateway for network connectivity.
+- Learn the core concepts of AWS Direct Connect.
+- Explore how to configure Amazon CloudFront as a CDN.
+- Build a hands-on global application architecture using AWS networking services.
 
-* **AWS Migration:** Team migrates GuardScript from local prototype to AWS.
-* **Infrastructure (Team):** Set up AWS services (Lambda, DynamoDB, S3, CloudFront).
-* **Comprehensive UI Improvements:** Upgrade visual design, fix theme system, and complete missing frontend features.
+### Tasks to be carried out this week:
 
-### 2. Weekly Tasks Breakdown
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Learn VPC Peering fundamentals<br>- Understand private connectivity between VPCs<br>- Compare VPC Peering and Transit Gateway | 24/03/2026 | 24/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Study AWS Transit Gateway basics<br>- Learn hub-and-spoke network architecture<br>- Explore routing between multiple VPCs and networks | 25/03/2026 | 25/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Learn AWS Direct Connect concepts<br>- Understand hybrid connectivity between on-premises and AWS<br>- Explore common enterprise networking use cases | 26/03/2026 | 26/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Hands-on:** Build a global application architecture<br>&emsp;+ Explore VPC connectivity design<br>&emsp;+ Evaluate hybrid networking concepts<br>&emsp;+ Configure content delivery with CloudFront | 27/03/2026 | 27/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Day | Main Task | Details | Status |
-|:---:|:---|:---|:---:|
-| **Mon** | **Migration Planning** | - Reviewed prototype, identified AWS services needed.<br>- Distributed migration tasks among team members. | Completed |
-| **Tue** | **Infrastructure (Team) & UI** | - Team deployed AWS infrastructure (Lambda, S3, CloudFront, DynamoDB).<br>- Enhanced overall UI: spacing, colors, logos, shield icons.<br>- Fixed light theme — multiple components displayed incorrectly in light mode. | Completed |
-| **Wed** | **Workspace & License** | - Added toggle option for workspace.<br>- Fixed license key status update and workspace creation flow.<br>- Fixed execution summary display. | Completed |
-| **Thu** | **Auth Pages & Landing** | - Fixed login/register page layouts for better responsive behavior.<br>- Added blur effect to landing page. | Completed |
-| **Fri** | **Sidebar Fix & PR Review** | - Fixed toggle sidebar in workspace.<br>- Reviewed and merged PR#14 → PR#21 (enhance_UI, License_status, workspace_Overview, login_register). | Completed |
-
-### 3. Key Results
-
-#### Infrastructure (Team Effort):
-* Deployed AWS services: Lambda, S3, CloudFront, DynamoDB.
-* Migrated data from SQLite to DynamoDB.
-
-#### Frontend (Personal Contribution):
-* UI upgrade: spacing, typography, color palette, new logos.
-* Finalized dark/light theme toggle.
-* Fixed workspace toggle, license status, execution summary, auth page layouts.
-* Added blur effect to landing page.
-* Merged 8 PRs (PR#14 → PR#21).
-
-### 4. Issues & Solutions
-* **Issue:** Light theme caused display issues since components were initially designed only for dark theme.
-* **Solution:** Audited all CSS, replaced hardcoded colors with CSS custom properties.
-
-### 5. Next Steps
-* Conduct end-to-end integration testing.
-* Complete the system architecture diagram.
-* Prepare documentation and worklog reports.
+### Week 9 Achievements:
+- Developed a stronger understanding of advanced AWS networking concepts, especially how different services are used to connect environments securely and efficiently at scale.
+- Learned the fundamentals of VPC Peering and how it enables private communication between VPCs, along with the limitations that appear when scaling to more complex network topologies.
+- Explored AWS Transit Gateway and understood how it simplifies multi-VPC and multi-network connectivity through a centralized hub-and-spoke architecture.
+- Improved understanding of the differences between VPC Peering and Transit Gateway, particularly in terms of scalability, routing management, and architecture design.
+- Studied AWS Direct Connect concepts and gained knowledge of how dedicated network connections can be used to link on-premises infrastructure with AWS environments in hybrid architectures.
+- Learned the core ideas behind Amazon CloudFront, including CDN behavior, edge locations, caching, and the role of content delivery optimization in improving user experience.
+- Practiced thinking about how global applications are designed to balance network performance, connectivity, and efficient content distribution across regions.
+- Strengthened practical understanding of global application architecture by combining networking concepts such as inter-VPC connectivity, hybrid networking, and content delivery strategies.
+- Improved overall awareness of how AWS networking services support performance, scalability, and reliability in enterprise-level and geographically distributed systems.

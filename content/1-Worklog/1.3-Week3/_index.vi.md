@@ -1,42 +1,33 @@
 ---
-title: "Tuần 3: Mạng & Bảo mật Hạ tầng (Networking & Infrastructure Security)"
+title: "Nhật ký công việc Tuần 3"
 date: 2026-01-19
 weight: 3
 chapter: false
-pre: " <b> 1.3. </b> "
+pre: "<b>1.3.</b> "
 ---
 
-### 1. Mục tiêu
+### Mục tiêu tuần:
+- Hiểu các kiến thức nền tảng về mạng trong AWS, bao gồm VPC, subnet, route table và gateway.
+- Tìm hiểu cách thiết kế ranh giới bảo mật mạng bằng Security Group và Network ACL.
+- Thực hành cấu hình truy cập internet cho public subnet và private subnet.
+- Xây dựng một kiến trúc nhiều tầng đơn giản trên AWS.
 
-* **Làm chủ Network:** Hiểu sâu về kiến trúc mạng lõi của AWS bao gồm VPC, chia mạng con (subnetting) và các ranh giới bảo mật mạng (Security Groups vs NACLs).
-* **Nền tảng Hạ tầng:** Cấu hình Internet Gateways (IGW) và NAT Gateways để quản lý lưu lượng mạng cho dự án "Website Security Baseline Assessment Platform".
-* **Nâng cao AI/NLP:** Hoàn thành chuỗi chuyên sâu về NLP bằng việc làm chủ các mô hình chuỗi (Sequence Models) để hỗ trợ tích hợp AI cho dự án trong tương lai.
+### Các công việc cần thực hiện trong tuần:
 
-### 2. Chi tiết công việc trong tuần
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Tìm hiểu các khái niệm của VPC, bao gồm CIDR block, subnet và route table<br>- Hiểu kiến trúc VPC và các thành phần chính của nó | 20/01/2026 | 20/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Tạo một VPC tùy chỉnh<br>- Cấu hình public subnet và private subnet<br>- Thiết lập route table để quản lý luồng mạng giữa các subnet | 21/01/2026 | 21/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Tìm hiểu Security Group và Network ACL<br>- Hiểu sự khác nhau giữa cơ chế lọc stateful và stateless<br>- Cấu hình rule inbound và outbound, đồng thời kiểm tra hành vi lọc lưu lượng | 22/01/2026 | 22/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Thực hành:**<br>&emsp;+ Tạo và gắn Internet Gateway (IGW)<br>&emsp;+ Thiết lập NAT Gateway để private subnet có thể truy cập outbound<br>&emsp;+ Xây dựng kiến trúc nhiều tầng đơn giản gồm web, application và database | 23/01/2026 | 23/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Thứ | Công việc chính | Chi tiết | Trạng thái |
-|:---:|:---|:---|:---:|
-| **Hai** | **Cốt lõi về Networking** | - **VPC Deep Dive:** Nghiên cứu các khái niệm VPC, khối CIDR và Subnetting (Public vs. Private).<br>- **Kết nối:** Cấu hình Internet Gateway (IGW) cho truy cập công khai và NAT Gateway cho các instance riêng tư.<br>- *Nguồn: Chương trình học Tuần 3.* | Hoàn thành |
-| **Ba** | **Chứng chỉ NLP** | - Hoàn thành khóa học cuối cùng của chương trình chuyên sâu:<br>&nbsp;**Natural Language Processing with Sequence Models**.<br>- Bao gồm các kiến thức về RNNs, LSTMs và GRUs cho xử lý văn bản nâng cao.<br>- [Link chứng chỉ](https://www.coursera.org/account/accomplishments/verify/MKFJD7RKYZC0) | Hoàn thành |
-| **Tư** | **AWS Specialization** | - Tiếp tục khóa **"AWS Fundamentals Specialization"** trên Coursera.<br>- Tập trung vào các module liên quan đến dịch vụ cốt lõi và khái niệm bảo mật của AWS.<br>- [AWS Fundamentals Specialization](https://www.coursera.org/programs/fptu-spring-2026-6010y/specializations/aws-fundamentals?source=search) | Đang thực hiện |
-| **Năm** | **Hạ tầng Dự án** | - Đánh giá các yêu cầu mạng cho **Website Security Baseline Assessment Platform**.<br>- Thảo luận với team *TheBois* về cách cô lập engine quét lỗ hổng bằng VPC để đảm bảo an toàn. | Hoàn thành |
-| **Sáu** | **Bảo mật Mạng** | - **Các lớp bảo mật:** Phân tích sự khác biệt giữa Security Groups (Stateful - Có trạng thái) và NACLs (Stateless - Không trạng thái).<br>- **Thực hành Lab:** Thiết lập môi trường VPC bảo mật để chuẩn bị cho việc triển khai dự án sau này. | Hoàn thành |
-
-### 3. Kết quả đạt được
-
-#### Kỹ thuật & Thực hành:
-* **Kiến trúc VPC:** Đã thiết kế thành công một VPC tùy chỉnh với các subnet public/private, đảm bảo sơ đồ mạng an toàn.
-* **Quản lý lưu lượng:** Triển khai Route Tables, IGW và NAT Gateways để kiểm soát hiệu quả lưu lượng vào/ra (inbound/outbound).
-* **Tư duy Bảo mật:** Phân biệt rõ ràng các trường hợp sử dụng cho Security Groups (cấp độ instance) so với NACLs (cấp độ subnet).
-
-#### Dự án (Team TheBois):
-* **Chiến lược Hạ tầng:** Đồng bộ thiết lập mạng với nhu cầu của **Website Security Baseline Assessment Platform** — đảm bảo công cụ quét hoạt động trong môi trường được kiểm soát, tránh việc lộ thông tin ngoài ý muốn trong quá trình kiểm tra lỗ hổng.
-
-#### Chứng chỉ & Học tập:
-* **Hoàn thành Coursera:** Đạt chứng chỉ từ DeepLearning.AI:
-    * *Natural Language Processing with Sequence Models*
-    * *(Đây là dấu mốc hoàn thành toàn bộ chương trình NLP Specialization)*
-
-### 4. Vấn đề & Giải pháp
-* **Vấn đề:** Nhầm lẫn giữa cơ chế stateful (của Security Groups) và stateless (của NACLs) trong quá trình thiết lập bài Lab.
-* **Giải pháp:** Thực hiện kiểm tra kết nối (ping) để quan sát cách lưu lượng trả về được xử lý, qua đó làm rõ việc SG tự động cho phép lưu lượng phản hồi còn NACL thì không.
+### Kết quả đạt được trong tuần:
+- Có được hiểu biết khá vững về các kiến thức mạng cơ bản trong AWS, đặc biệt là cấu trúc và vai trò của Amazon VPC trong kiến trúc cloud.
+- Nắm được các khái niệm quan trọng của VPC như CIDR block, public subnet, private subnet, route table và mối liên hệ giữa các thành phần mạng.
+- Tạo và cấu hình thành công một môi trường VPC tùy chỉnh, qua đó củng cố hiểu biết thực tế về phân chia mạng trong AWS.
+- Hiểu rõ hơn cách route table điều hướng lưu lượng mạng giữa các subnet và ra bên ngoài hệ thống.
+- Tìm hiểu Security Group và Network ACL, đồng thời phân biệt được sự khác nhau giữa cơ chế lọc lưu lượng stateful và stateless.
+- Thực hành cấu hình các rule inbound và outbound, từ đó hiểu rõ hơn cách kiểm soát và giới hạn lưu lượng ở các lớp khác nhau trong hệ thống mạng.
+- Nắm được vai trò của Internet Gateway và NAT Gateway trong việc cung cấp kết nối internet cho tài nguyên ở public subnet và private subnet.
+- Xây dựng một kiến trúc nhiều tầng đơn giản với các lớp web, application và database tách biệt, qua đó có thêm kinh nghiệm thực tế trong việc tổ chức tài nguyên cloud theo yêu cầu bảo mật và truy cập.
+- Củng cố hiểu biết tổng thể về nguyên tắc thiết kế mạng trên AWS, đặc biệt là trong các khía cạnh phân tách mạng, kiểm soát truy cập và xây dựng kiến trúc cloud an toàn.

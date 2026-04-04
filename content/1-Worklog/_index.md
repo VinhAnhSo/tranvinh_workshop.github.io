@@ -6,30 +6,26 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This worklog documents **12 weeks** of my internship at the **First Cloud AI Journey (FCJ) 2026** program, from **January 5, 2026** to **April 18, 2026**. As the **Team Lead** of **Team TheBois**, I was responsible for frontend design & implementation, team coordination, and supporting infrastructure setup for our main project — **GuardScript**, a serverless AWS platform for encrypted script distribution and license management.
+**Week 1:** [Getting familiar with AWS and its core services](1.1-week1/)
 
-The worklog is organized week-by-week, covering the full journey from AWS onboarding to building and deploying the GuardScript platform:
+**Week 2:** [Exploring AWS storage and database services](1.2-week2/)
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+**Week 3:** [Learning AWS networking architecture and building a multi-tier VPC](1.3-week3/)
 
-**Week 2:** [Storage, Databases & Project Inception](1.2-week2/)
+**Week 4:** [Learning AWS IAM and practicing access control and security](1.4-week4/)
 
-**Week 3:** [Networking & Infrastructure Security](1.3-week3/)
+**Week 5:** [Building a REST API backend with serverless architecture on AWS](1.5-week5/)
 
-**Week 4:** [Identity, Security & re:Invent Updates](1.4-week4/)
+**Week 6:** [Exploring application integration with SQS, SNS, EventBridge, and Step Functions](1.6-week6/)
 
-**Week 5:** [Serverless Deep Dive & Project Ideation](1.5-week5/)
+**Week 7:** [Learning Docker, ECR, ECS, and deploying a containerized application](1.7-week7/)
 
-**Week 6:** [Post-Tet Sync & GuardScript Project Design](1.6-week6/)
+**Week 8:** [Exploring monitoring, logging, and tracing with CloudWatch, CloudTrail, and X-Ray](1.8-week8/)
 
-**Week 7:** [GuardScript — Core Backend Development](1.7-week7/)
+**Week 9:** [Learning advanced networking with VPC Peering, Transit Gateway, Direct Connect, and CloudFront](1.9-week9/)
 
-**Week 8:** [GuardScript — Feature Development & Crypto Module](1.8-week8/)
+**Week 10:** [Learning DevOps, CI/CD, and deployment automation with AWS services](1.10-week10/)
 
-**Week 9:** [GuardScript — AWS Migration & Frontend Design](1.9-week9/)
+**Week 11:** [Exploring advanced security with WAF, Shield, Secrets Manager, and Certificate Manager](1.11-week11/)
 
-**Week 10:** [GuardScript — Frontend Implementation & Integration Testing](1.10-week10/)
-
-**Week 11:** [GuardScript — Security Hardening & Access Control](1.11-week11/)
-
-**Week 12:** [GuardScript — Documentation Finalization, Validation & Demo Readiness](1.12-week12/)
+**Week 12:** [Learning cost optimization, performance tuning, disaster recovery, and production-ready architecture](1.12-week12/)

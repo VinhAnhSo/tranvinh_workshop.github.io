@@ -1,57 +1,32 @@
 ---
-title: "Tuần 6: Hội nhập sau Tết & Thiết kế dự án GuardScript"
-date: 2026-02-23
+title: "Nhật ký công việc Tuần 6"
+date: 2026-03-02
 weight: 6
 chapter: false
-pre: " <b> 1.6. </b> "
+pre: "<b>1.6.</b> "
 ---
 
-### 1. Mục tiêu
+### Mục tiêu tuần:
+- Hiểu cơ chế nhắn tin của SQS và SNS trong AWS.
+- Tìm hiểu cách sử dụng EventBridge để định tuyến sự kiện.
+- Khám phá Step Functions để điều phối workflow của ứng dụng.
+- Xây dựng kiến trúc hướng sự kiện bằng các dịch vụ tích hợp của AWS.
 
-* **Đồng bộ nhóm:** Kết nối lại với Team TheBois sau kỳ nghỉ Tết; rà soát tiến độ và thống nhất hướng dự án.
-* **Chốt dự án:** Chính thức chọn **GuardScript** làm dự án chính cho kỳ thực tập FCJ và xác định phạm vi.
-* **Thiết kế kiến trúc:** Thiết kế kiến trúc hệ thống tổng thể, database schema và cấu trúc API.
-* **Nghiên cứu:** Tìm hiểu các kỹ thuật mã hóa (AES-GCM, ECDH) và chiến lược bảo vệ mã nguồn liên quan đến dự án.
+### Các công việc cần thực hiện trong tuần:
 
-### 2. Chi tiết công việc trong tuần
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Tìm hiểu kiến thức cơ bản về SQS<br>- Hiểu SNS và mô hình pub/sub<br>- So sánh các trường hợp sử dụng của SQS và SNS | 03/03/2026 | 03/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Nghiên cứu kiến thức cơ bản về EventBridge<br>- Tìm hiểu cách định tuyến sự kiện<br>- Thực hành tạo rule và target | 04/03/2026 | 04/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Tìm hiểu Step Functions<br>- Hiểu state machine và cơ chế điều phối task<br>- Thực hành thiết kế workflow đơn giản | 05/03/2026 | 05/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Thực hành:**<br>&emsp;+ Tạo thành phần messaging bằng SQS và SNS<br>&emsp;+ Cấu hình EventBridge rules<br>&emsp;+ Điều phối workflow với Step Functions | 06/03/2026 | 06/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Thứ | Công việc chính | Chi tiết | Trạng thái |
-|:---:|:---|:---|:---:|
-| **Hai** | **Đồng bộ nhóm** | - Kết nối lại với Team TheBois sau 2 tuần nghỉ Tết.<br>- Rà soát các ý tưởng dự án từ Tuần 5.<br>- Chính thức chọn **GuardScript** làm dự án chính. | Hoàn thành |
-| **Ba** | **Xác định phạm vi** | - Định nghĩa tính năng cốt lõi:<br>&nbsp;+ Quản lý dự án theo workspace<br>&nbsp;+ Phân phối script được mã hóa (Python, Node.js)<br>&nbsp;+ Quản lý license key với khóa phần cứng (HWID)<br>&nbsp;+ Cộng tác nhóm theo vai trò<br>&nbsp;+ Kiểm soát truy cập (IP whitelist/blacklist) | Hoàn thành |
-| **Tư** | **Thiết kế kiến trúc** | - Thiết kế backend: Express.js + SQLite cho bản prototype ban đầu.<br>- Lên kế hoạch modular controller pattern (auth, project, file, license, workspace, team, access).<br>- Phác thảo cấu trúc API route (~70 endpoints). | Hoàn thành |
-| **Năm** | **Nghiên cứu Crypto** | - Nghiên cứu AES-256-GCM cho mã hóa nội dung file.<br>- Tìm hiểu ECDH (X25519) key exchange cho handshake loader an toàn.<br>- Đánh giá PBKDF2 (210K iterations) cho password hashing so với bcrypt. | Hoàn thành |
-| **Sáu** | **Thiết lập phát triển** | - Khởi tạo project Node.js với Express framework.<br>- Thiết lập cấu trúc repository dự án.<br>- Tạo `package.json` với dependencies ban đầu.<br>- Cấu hình môi trường phát triển và công cụ. | Hoàn thành |
-
-### 3. Kết quả đạt được
-
-#### Kỹ thuật:
-* **Kế hoạch kiến trúc:** Thiết kế modular monolith backend với phân tách rõ ràng:
-    * **Controllers:** 10 controller chuyên biệt theo domain, xử lý các khía cạnh khác nhau.
-    * **Utils:** Các module tái sử dụng: crypto, auth, rate-limiting, response.
-    * **Storage:** Lưu trữ file dựa trên filesystem với mã hóa at-rest.
-* **Thiết kế bảo mật:** Chọn các phương pháp mã hóa tiêu chuẩn công nghiệp:
-    * AES-256-GCM cho mã hóa nội dung file.
-    * ECDH key exchange cho handshake loader.
-    * PBKDF2-SHA256 (210K iterations) cho lưu mật khẩu.
-    * JWT (HMAC-SHA256) cho token xác thực.
-
-#### Dự án (Team TheBois):
-* **Phạm vi đã chốt:** Team đồng ý scope GuardScript — tập trung vào vấn đề cốt lõi là chống tái phân phối code trái phép.
-* **Kiến trúc đồng bộ:** Tất cả thành viên hiểu kiến trúc hệ thống đã lên kế hoạch.
-
-### 4. Vấn đề & Giải pháp
-* **Vấn đề:** Chọn giữa SQLite (đơn giản, file-based) vs PostgreSQL (mạnh mẽ, networked) cho prototype.
-* **Giải pháp:** Chọn SQLite cho giai đoạn prototype nhờ zero-config và tính portable. Lên kế hoạch migrate sang DynamoDB cho giai đoạn triển khai AWS.
-
-### 5. Bài học rút ra
-* Xác định scope dự án rõ ràng từ sớm giúp tránh feature creep.
-* Modular controller pattern giúp dễ dàng phân chia công việc giữa các thành viên.
-* Chọn đúng cryptographic primitives ngay từ đầu rất quan trọng cho ứng dụng yêu cầu bảo mật cao.
-
-### 6. Bước tiếp theo
-* Bắt đầu phát triển GuardScript backend.
-* Triển khai database schema và module xác thực.
-* Xây dựng controller layer cho workspace và project management.
-
-
+### Kết quả đạt được trong tuần:
+- Có được hiểu biết khá vững về AWS SQS và SNS, bao gồm cách giao tiếp bằng hàng đợi và mô hình publish/subscribe trong hệ thống phân tán.
+- Phân biệt được SQS và SNS, đồng thời xác định được các trường hợp sử dụng phù hợp của từng dịch vụ trong tích hợp bất đồng bộ.
+- Tìm hiểu EventBridge và hiểu cách dịch vụ này được dùng để định tuyến sự kiện giữa các dịch vụ AWS và các thành phần ứng dụng tùy chỉnh một cách linh hoạt và có khả năng mở rộng.
+- Nắm được kiến thức cơ bản về Step Functions, bao gồm cách workflow được mô hình hóa bằng state machine để điều phối nhiều bước xử lý.
+- Thực hành thiết kế các workflow và mô hình định tuyến sự kiện đơn giản, qua đó cải thiện hiểu biết về orchestration và giao tiếp giữa các dịch vụ.
+- Tích hợp SQS, SNS, EventBridge và Step Functions trong một kiến trúc hướng sự kiện cơ bản để quan sát cách các dịch vụ này phối hợp trong thực tế.
+- Củng cố kỹ năng xây dựng hệ thống loosely coupled, nơi các thành phần giao tiếp với nhau thông qua message và event thay vì gọi trực tiếp đồng bộ.
+- Nâng cao hiểu biết tổng thể về các mẫu tích hợp ứng dụng trên AWS, đặc biệt trong các khía cạnh xử lý bất đồng bộ, tự động hóa workflow và thiết kế hệ thống hướng sự kiện.

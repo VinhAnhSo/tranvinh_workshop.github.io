@@ -1,42 +1,32 @@
 ---
-title: "Week 7: GuardScript — Project Kickoff & Frontend Start"
-date: 2026-03-02
+title: "Week 7 Worklog"
+date: 2026-03-09
 weight: 7
 chapter: false
-pre: " <b> 1.7. </b> "
+pre: "<b>1.7.</b> "
 ---
 
-### 1. Objectives
+### Week 7 Objectives:
+- Understand Docker fundamentals and containerization concepts.
+- Learn how to use Amazon ECS clusters and services for container orchestration.
+- Explore Amazon ECR as a container image registry.
+- Build a hands-on containerized web application using AWS services.
 
-* **Project Kickoff:** Finalize overall architecture and distribute tasks among team members.
-* **Backend Setup:** Team members initialize server, database, and authentication system.
-* **Frontend Kickoff:** Begin building the web UI — landing page, login/register pages.
-* **Development Start:** The GuardScript project officially begins development on **March 6, 2026**.
+### Tasks to be carried out this week:
 
-### 2. Weekly Tasks Breakdown
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Learn Docker basics<br>- Understand images, containers, and Dockerfiles<br>- Practice building and running containers locally | 10/03/2026 | 10/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Study Amazon ECS fundamentals<br>- Learn about ECS clusters, tasks, and services<br>- Explore how ECS manages containerized applications | 11/03/2026 | 11/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Learn Amazon ECR basics<br>- Practice pushing and pulling container images<br>- Understand image repository management | 12/03/2026 | 12/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Hands-on:** Build a containerized web app<br>&emsp;+ Create a Dockerfile for the application<br>&emsp;+ Push the image to Amazon ECR<br>&emsp;+ Deploy and run the application using Amazon ECS | 13/03/2026 | 13/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Day | Main Task | Details | Status |
-|:---:|:---|:---|:---:|
-| **Mon** | **Architecture Review** | - Finalized overall architecture with the team.<br>- Distributed tasks: personally handling frontend; team members handling backend and infrastructure. | Completed |
-| **Tue – Wed** | **Backend Setup (Team)** | - Team members initialized Express.js server, SQLite database, and login system.<br>- Assisted with code review and architecture feedback. | Completed |
-| **Thu** | **Frontend Start** | - Started building the landing page and login/register pages.<br>- Assisted with basic backend API testing. | Completed |
-| **Fri** | **UI Improvements & Cleanup** | - Improved UI — adjusted spacing, colors, responsive layout.<br>- Configured `.gitignore`, cleaned up unnecessary files in the repo. | Completed |
-
-### 3. Key Results
-
-#### Backend (Team Effort):
-* Backend server and database set up and running.
-* Login/register system functional.
-
-#### Frontend (Personal Contribution):
-* Started building landing page, login/register pages.
-* Established frontend directory structure and base styles.
-
-### 4. Issues & Solutions
-* **Issue:** Coordinating frontend and backend to ensure API compatibility.
-* **Solution:** Frequent communication with the team, mutual code reviews.
-
-### 5. Next Steps
-* Continue frontend dashboard and workspace development.
-* Team to complete remaining APIs.
-* Build the encryption module.
+### Week 7 Achievements:
+- Developed a solid understanding of Docker fundamentals, including the concepts of images, containers, Dockerfiles, and the general workflow of containerizing applications.
+- Practiced building and running containers locally, which helped reinforce how application environments can be packaged consistently across development and deployment stages.
+- Learned how Amazon ECS works, including the roles of clusters, tasks, and services in managing and running containerized workloads on AWS.
+- Gained practical knowledge of Amazon ECR and understood how it is used to store, manage, and retrieve container images for deployment.
+- Explored the relationship between Docker, Amazon ECR, and Amazon ECS to better understand the complete lifecycle of a containerized application in the AWS ecosystem.
+- Successfully created a basic containerized web application and prepared it for deployment using container technologies and AWS orchestration services.
+- Improved hands-on skills in writing Docker configuration files, managing image repositories, and deploying containers to a cloud-based environment.
+- Strengthened overall understanding of containerization and orchestration concepts, especially the benefits of portability, consistency, scalability, and simplified deployment for modern web applications.

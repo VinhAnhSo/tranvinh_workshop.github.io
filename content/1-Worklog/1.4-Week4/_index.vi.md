@@ -1,41 +1,32 @@
 ---
-title: "Tuần 4: Định danh, Bảo mật & Cập nhật re:Invent"
+title: "Nhật ký công việc Tuần 4"
 date: 2026-01-26
 weight: 4
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: "<b>1.4.</b> "
 ---
 
-### 1. Mục tiêu
+### Mục tiêu tuần:
+- Hiểu các kiến thức nền tảng về AWS IAM, bao gồm users, groups, roles và policies.
+- Tìm hiểu cách thiết kế và áp dụng mô hình phân quyền phù hợp.
+- Cấu hình MFA để tăng cường bảo mật tài khoản.
+- Xây dựng môi trường AWS nhiều người dùng theo các best practices về bảo mật.
 
-* **Bảo mật & Định danh:** Làm chủ dịch vụ AWS Identity and Access Management (IAM) để bảo vệ môi trường làm việc của nhóm. Tập trung vào phân quyền chi tiết (Policies), Roles và thực thi xác thực đa yếu tố (MFA).
-* **Cập nhật công nghệ:** Cập nhật các cải tiến mới nhất từ sự kiện **AWS re:Invent 2025** (Sự kiện Recap tại VN ngày 27/01).
-* **Tích hợp dự án:** Đánh giá các tính năng mới (S3 Vector, Bedrock Agents) để xem xét khả năng tích hợp vào dự án **Website Security Baseline Assessment Platform**.
+### Các công việc cần thực hiện trong tuần:
 
-### 2. Chi tiết công việc trong tuần
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Tìm hiểu các khái niệm cơ bản của IAM như Users, Groups và Roles<br>- Hiểu sự khác nhau giữa authentication và authorization | 27/01/2026 | 27/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Nghiên cứu IAM Policy với cấu trúc JSON<br>- Tìm hiểu managed policy và inline policy<br>- Thực hành gán policy vào user, group và role | 28/01/2026 | 28/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Cấu hình MFA cho root user và IAM user<br>- Áp dụng password policy<br>- Tìm hiểu và kiểm tra permission boundaries | 29/01/2026 | 29/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Thực hành:**<br>&emsp;+ Tạo môi trường nhiều IAM user<br>&emsp;+ Gán group và role phù hợp<br>&emsp;+ Giới hạn quyền truy cập dịch vụ theo nguyên tắc least privilege | 30/01/2026 | 30/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Thứ | Công việc chính | Chi tiết | Trạng thái |
-|:---:|:---|:---|:---:|
-| **Hai** | **Kiến thức cốt lõi IAM** | - **Users & Groups:** Tạo các IAM User riêng biệt cho từng thành viên team TheBois (Binh, Tri, Hien, Tung, Vinh).<br>- **Groups:** Tổ chức User vào các nhóm chức năng (Dev, Admin, Audit) để quản lý quyền hạn hiệu quả. | Hoàn thành |
-| **Ba** | **Sự kiện AWS** | - **Tham dự:** Sự kiện "AWS re:Invent 2025 Recap" (27/01/2026).<br>- **Tóm tắt:** Cập nhật về GenAI (Bedrock Agents), SageMaker Unified Studio và tối ưu hóa S3.<br>*(Xem báo cáo chi tiết sự kiện ở mục riêng)* | Hoàn thành |
-| **Tư** | **Policies & Bảo mật** | - **Phân quyền:** Viết các JSON Policies (theo nguyên tắc Quyền tối thiểu - Least Privilege) để giới hạn quyền truy cập vào các S3 bucket và EC2 instance cụ thể.<br>- **Tăng cường bảo mật:** Bắt buộc kích hoạt **MFA (Xác thực đa yếu tố)** cho tài khoản Root và tất cả IAM User. | Hoàn thành |
-| **Năm** | **Đánh giá Kỹ thuật** | - Phân tích **S3 Vector** và **S3 Tables** để lưu trữ và truy xuất log tối ưu chi phí cho dự án Security Platform.<br>- Nghiên cứu khả năng của **Bedrock Agents** trong việc tự động hóa quy trình quét bảo mật. | Hoàn thành |
-| **Sáu** | **Chứng chỉ AWS** | - Tiếp tục học khóa **AWS Fundamentals Specialization** (Coursera).<br>- Ôn tập và so sánh các phương pháp bảo mật đã học ở Tuần 3 (VPC) so với Tuần 4 (IAM). | Đang thực hiện |
-
-### 3. Kết quả đạt được
-
-#### Kỹ thuật & Thực hành:
-* **Hạ tầng IAM:** Đã cấu hình hoàn chỉnh môi trường truy cập bảo mật.
-    * **Users/Groups:** Đã tạo và phân nhóm xong.
-    * **Policies:** Áp dụng các Policy tùy chỉnh để đảm bảo Developer chỉ truy cập được các tài nguyên liên quan đến dự án "Website Security Baseline Assessment Platform".
-    * **MFA:** Triển khai thành công 100% cho toàn bộ team.
-* **Tư thế bảo mật (Security Posture):** Loại bỏ hoàn toàn việc sử dụng tài khoản Root cho các tác vụ hàng ngày.
-
-#### Cập nhật kiến thức (Tóm tắt sự kiện):
-* **GenAI & Dữ liệu:** Nắm được cái nhìn tổng quan về Bedrock Agents và S3 Vector từ sự kiện AWS re:Invent Recap.
-* **Ứng dụng:** Nhận thấy tiềm năng sử dụng **Cognito** (quản lý user) và **S3 Vector** (lưu trữ vector log) cho backend của dự án.
-* *(Ghi chú: Nội dung chi tiết về các phiên chia sẻ và diễn giả được lưu trong tài liệu riêng.)*
-
-### 4. Vấn đề & Giải pháp
-* **Vấn đề:** Gặp khó khăn và phức tạp khi tự viết các JSON Policy tùy chỉnh để giới hạn tài nguyên (định dạng ARN).
-* **Giải pháp:** Sử dụng công cụ **AWS Policy Generator** để tạo bản nháp, sau đó tinh chỉnh thủ công đoạn mã JSON để khớp với tên S3 bucket cụ thể của dự án.
+### Kết quả đạt được trong tuần:
+- Có được hiểu biết khá vững về các khái niệm cốt lõi của AWS IAM, bao gồm IAM User, IAM Group, IAM Role và IAM Policy.
+- Hiểu rõ sự khác nhau giữa xác thực và phân quyền, từ đó nắm được cách AWS kiểm soát danh tính và quyền truy cập.
+- Thực hành đọc và viết IAM Policy ở định dạng JSON, qua đó hiểu rõ hơn cách quyền hạn được mô tả và áp dụng trong AWS.
+- Phân biệt được managed policy và inline policy, đồng thời hiểu các trường hợp nên sử dụng từng loại trong thực tế.
+- Cấu hình thành công MFA để tăng cường bảo mật tài khoản và nâng cao nhận thức về các best practices bảo mật trong AWS.
+- Áp dụng password policy và tìm hiểu permission boundaries để kiểm soát phạm vi quyền truy cập của người dùng.
+- Xây dựng được một môi trường nhiều người dùng đơn giản và có thêm kinh nghiệm trong việc phân quyền theo vai trò và trách nhiệm.
+- Củng cố nhận thức về nguyên tắc least privilege và tầm quan trọng của việc thiết kế IAM an toàn trong hệ thống AWS.

@@ -1,43 +1,32 @@
 ---
-title: "Tuần 2: Lưu trữ, Cơ sở dữ liệu & Khởi động Dự án"
+title: "Nhật ký công việc Tuần 2"
 date: 2026-01-12
 weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: "<b>1.2.</b> "
 ---
 
-### 1. Mục tiêu
+### Mục tiêu tuần:
+- Hiểu các dịch vụ lưu trữ và cơ sở dữ liệu của AWS, bao gồm S3, EBS và RDS.
+- Tìm hiểu về lifecycle policy và snapshot để quản lý dữ liệu.
+- Xây dựng một ứng dụng đám mây đơn giản tích hợp EC2, S3 và RDS.
 
-* **Kỹ thuật cốt lõi:** Tìm hiểu sâu về các dịch vụ Lưu trữ (S3, EBS) và Cơ sở dữ liệu (RDS) của AWS; thực hành xây dựng hệ thống upload file.
-* **Khởi động dự án:** Hoàn thiện đề xuất cho dự án **"Website Security Baseline Assessment Platform"** – công cụ hỗ trợ đánh giá nhanh rủi ro bảo mật.
-* **Nâng cao kỹ năng:** Củng cố kiến thức NLP thông qua các chứng chỉ Coursera để phục vụ cho khía cạnh AI của dự án thực tập.
+### Các công việc cần thực hiện trong tuần:
 
-### 2. Chi tiết công việc trong tuần
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Tìm hiểu Amazon S3 là dịch vụ lưu trữ đối tượng có độ bền dữ liệu rất cao (99.999999999%)<br>- Tìm hiểu về bucket, object và các yêu cầu kiểm soát truy cập trong S3<br>- Nghiên cứu S3 Lifecycle Policy để tự động quản lý dữ liệu | 13/01/2026 | 13/01/2026 | <https://000057.awsstudygroup.com> |
+| 3 | - Tìm hiểu cách host static website bằng Amazon S3<br>- Khám phá các giải pháp hiện đại hơn như AWS Amplify Hosting<br>- Nghiên cứu đặc điểm của EBS volume, bao gồm thay đổi kích thước và chuyển đổi loại volume | 14/01/2026 | 14/01/2026 | <https://000057.awsstudygroup.com> |
+| 4 | - Tìm hiểu EBS snapshot như một dạng sao lưu tại một thời điểm được lưu trữ trên S3<br>- Nghiên cứu cách snapshot hoạt động với mã hóa và khôi phục dữ liệu<br>- Tìm hiểu kiến trúc Amazon RDS, các hệ quản trị cơ sở dữ liệu được hỗ trợ và lợi ích của dịch vụ được quản lý | 15/01/2026 | 15/01/2026 | <https://000005.awsstudygroup.com/> |
+| 5 | - **Thực hành:**<br>&emsp;+ Xây dựng một hệ thống tải tệp đơn giản<br>&emsp;+ Sử dụng EC2 cho phần xử lý ứng dụng<br>&emsp;+ Sử dụng S3 để lưu trữ tệp và RDS để lưu metadata | 16/01/2026 | 16/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Thứ | Công việc chính | Chi tiết | Trạng thái |
-|:---:|:---|:---|:---:|
-| **Hai** | **Lưu trữ & CSDL** | - Nghiên cứu **S3** (Buckets, lifecycle policies).<br>- Nghiên cứu **EBS** (Volumes, snapshots) & **RDS** (Cài đặt, quản lý).<br>- *Nguồn: Chương trình học Tuần 2*. | Hoàn thành |
-| **Ba** | **Thực hành Lab** | - **Xây dựng hệ thống upload file:**<br>&nbsp;+ Cấu hình S3 bucket để lưu trữ.<br>&nbsp;+ Kết nối backend với S3 để xử lý file. | Hoàn thành |
-| **Tư** | **Đề xuất dự án** | - **Soạn thảo Proposal:** Xác định phạm vi cho "Website Security Baseline Assessment Platform".<br>- **Chốt tính năng:**<br>&nbsp;+ Kiểm tra cơ bản: HTTPS/SSL, Robots.txt.<br>&nbsp;+ Quét lỗ hổng: SQL Injection, XSS, File Uploads.<br>- **Kiến trúc:** Thiết kế core độc lập (chạy Local/VPS/AWS) không phụ thuộc cứng vào hạ tầng cloud.<br>- [Link tới File Proposal](https://docs.google.com/document/d/1oSdWCVFiCKTUP9ol8eZyOwYg9J5DhtE1/edit?usp=sharing&ouid=101583017547639870148&rtpof=true&sd=true) | Hoàn thành |
-| **Năm** | **Chứng chỉ AI/NLP** | - Hoàn thành 2 khóa học DeepLearning.AI trên Coursera:<br>&nbsp;1. NLP with Attention Models.<br>&nbsp;2. NLP with Classification and Vector Spaces.<br>- [Cert 1](https://www.coursera.org/account/accomplishments/verify/177J1KWEAWPH) · [Cert 2](https://www.coursera.org/account/accomplishments/verify/JCCLTKPCI1CV) | Hoàn thành |
-| **Sáu** | **AWS Specialization** | - Tìm kiếm và lên kế hoạch học "AWS Fundamentals Specialization".<br>- Review tuần và họp nhóm rút kinh nghiệm.<br>- [AWS Fundamentals Specialization](https://www.coursera.org/programs/fptu-spring-2026-6010y/specializations/aws-fundamentals?source=search) | Đang thực hiện |
-
-### 3. Kết quả đạt được
-
-#### Kỹ thuật & Thực hành:
-* **Thành thạo Lưu trữ:** Đã hiểu và quản lý được S3 Lifecycles và EBS Snapshots.
-* **Triển khai thực tế:** Xây dựng thành công **Hệ thống Upload File** sử dụng AWS S3, đảm bảo dữ liệu được lưu trữ bền vững.
-
-#### Dự án (Team TheBois):
-* **Hoàn thiện Proposal:** Đã xong đề xuất cho **Website Security Baseline Assessment Platform**.
-* **Xác định phạm vi:** Thống nhất tập trung vào "Đánh giá nền tảng" (tiền kiểm thử/pre-pentest) để nhận diện rủi ro phổ biến như Injection, Phân quyền (Access Control), và Cấu hình sai (Security Misconfiguration).
-* **Chiến lược kiến trúc:** Quyết định kiến trúc linh hoạt: AWS dùng để lưu trữ báo cáo/log, nhưng core logic quét lỗi hoạt động độc lập (Portable).
-
-#### Chứng chỉ & Học tập:
-* **Hoàn thành Coursera:** Đạt 2 chứng chỉ từ DeepLearning.AI (hoàn thành ngày 15/01/2026):
-    * *Natural Language Processing with Attention Models*
-    * *Natural Language Processing with Classification and Vector Spaces*
-
-### 4. Vấn đề & Giải pháp
-* **Vấn đề:** Khó khăn trong việc xác định phạm vi pháp lý khi quét các website bên ngoài.
-* **Giải pháp:** Đã làm rõ trong proposal - Tuân thủ nguyên tắc "Chỉ thực hiện khi có sự đồng ý bằng văn bản".
+### Kết quả đạt được trong tuần:
+- Có được hiểu biết khá vững về các dịch vụ lưu trữ và cơ sở dữ liệu trên AWS, đặc biệt là vai trò của Amazon S3, EBS và RDS trong thiết kế ứng dụng đám mây.
+- Hiểu được Amazon S3 là dịch vụ lưu trữ đối tượng có độ bền rất cao, đồng thời nắm được các khái niệm cơ bản như bucket, object và kiểm soát truy cập.
+- Tìm hiểu S3 Lifecycle Policy và hiểu cách dữ liệu có thể được tự động chuyển lớp lưu trữ hoặc xóa đi để tối ưu quản lý lưu trữ.
+- Khám phá khả năng host static website bằng Amazon S3 và biết thêm về các lựa chọn hiện đại hơn như AWS Amplify Hosting cho những nhu cầu triển khai nâng cao.
+- Nắm được các đặc điểm của Amazon EBS volume, bao gồm mối liên hệ với Availability Zone, khả năng thay đổi kích thước và chuyển đổi loại volume một cách linh hoạt.
+- Hiểu cách EBS snapshot hoạt động như bản sao lưu tại một thời điểm, cũng như vai trò của snapshot trong sao lưu, phục hồi, mã hóa và bảo vệ dữ liệu.
+- Tìm hiểu kiến trúc của Amazon RDS và hiểu được lợi ích của dịch vụ cơ sở dữ liệu quan hệ được quản lý, bao gồm tự động bảo trì, vá lỗi và hỗ trợ nhiều database engine khác nhau.
+- Cải thiện hiểu biết về kiến trúc cloud an toàn khi tìm hiểu cách RDS thường được đặt trong private subnet nhưng vẫn cho phép ứng dụng truy cập một cách phù hợp.
+- Xây dựng thành công một hệ thống tải tệp đơn giản tích hợp EC2, S3 và RDS, qua đó củng cố hiểu biết thực tế về cách nhiều dịch vụ AWS có thể phối hợp với nhau trong một ứng dụng hoàn chỉnh.

@@ -1,49 +1,32 @@
 ---
-title: "Tuần 5: Tìm hiểu Serverless & Hình thành ý tưởng dự án"
+title: "Nhật ký công việc Tuần 5"
 date: 2026-02-02
 weight: 5
 chapter: false
-pre: " <b> 1.5. </b> "
+pre: "<b>1.5.</b> "
 ---
 
-### 1. Mục tiêu
+### Mục tiêu tuần:
+- Hiểu các hàm AWS Lambda và cơ chế kích hoạt bằng sự kiện.
+- Tìm hiểu cách cấu hình và triển khai API bằng API Gateway.
+- Thực hành các thao tác cơ bản với DynamoDB cho ứng dụng serverless.
+- Xây dựng một REST API backend đơn giản bằng các dịch vụ serverless.
 
-* **Nắm vững Serverless:** Tìm hiểu chuyên sâu về AWS Lambda, API Gateway và DynamoDB — các thành phần cốt lõi của kiến trúc serverless.
-* **Tiến độ chứng chỉ:** Tiếp tục khóa AWS Fundamentals Specialization trên Coursera.
-* **Ý tưởng dự án:** Brainstorm và đánh giá các ý tưởng dự án với Team TheBois cho project thực tập FCJ.
-* **Tổng kết trước Tết:** Hệ thống lại kiến thức Tuần 1–4 trước kỳ nghỉ Tết Nguyên đán.
+### Các công việc cần thực hiện trong tuần:
 
-### 2. Chi tiết công việc trong tuần
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Tìm hiểu kiến thức cơ bản về AWS Lambda<br>- Hiểu mô hình thực thi và các trigger của Lambda | 03/02/2026 | 03/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Tìm hiểu cách thiết lập API Gateway<br>- Hiểu cách API Gateway tích hợp với Lambda<br>- Thực hành tạo các API endpoint | 04/02/2026 | 04/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Tìm hiểu kiến thức cơ bản về DynamoDB<br>- Thực hành CRUD trên DynamoDB<br>- Hiểu partition key và cấu trúc bảng | 05/02/2026 | 05/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - **Thực hành:**<br>&emsp;+ Tạo các Lambda function<br>&emsp;+ Cấu hình route trong API Gateway<br>&emsp;+ Kết nối API với DynamoDB để xây dựng REST API backend | 06/02/2026 | 06/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-| Thứ | Công việc chính | Chi tiết | Trạng thái |
-|:---:|:---|:---|:---:|
-| **Hai** | **Lambda Deep Dive** | - Nghiên cứu mô hình thực thi Lambda, cold start và pricing.<br>- Tìm hiểu Lambda Function URL như endpoint API gọn nhẹ.<br>- Thực hành tạo Lambda function với Node.js runtime. | Hoàn thành |
-| **Ba** | **API Gateway & DynamoDB** | - So sánh API Gateway REST vs HTTP API.<br>- Nghiên cứu sâu DynamoDB: partition key, sort key, GSI, query patterns.<br>- Tìm hiểu chế độ PAY_PER_REQUEST của DynamoDB. | Hoàn thành |
-| **Tư** | **Thực hành Lab** | - Xây dựng serverless REST API đơn giản:<br>&nbsp;+ Lambda function xử lý CRUD.<br>&nbsp;+ DynamoDB table lưu dữ liệu.<br>&nbsp;+ Test qua Lambda Function URL. | Hoàn thành |
-| **Năm** | **Brainstorm Dự án** | - Họp Team TheBois thảo luận hướng dự án.<br>- Đánh giá các ý tưởng: phân phối mã nguồn an toàn, quản lý license, cloud-based code editor.<br>- Hình thành ý tưởng ban đầu cho **GuardScript** — nền tảng phân phối và bảo vệ mã nguồn với hệ thống licensing. | Hoàn thành |
-| **Sáu** | **Tổng kết trước Tết** | - Hệ thống lại ghi chú từ Tuần 1–5.<br>- Tiếp tục AWS Fundamentals Specialization (Coursera).<br>- Chuẩn bị task backlog cho sau Tết.<br>- *Lưu ý: Tuần sau bắt đầu nghỉ Tết (2 tuần).* | Hoàn thành |
-
-### 3. Kết quả đạt được
-
-#### Kỹ thuật:
-* **Kiến thức Serverless:** Hiểu rõ thực tiễn bộ ba Lambda + API Gateway + DynamoDB, tạo nền tảng cho việc triển khai GuardScript lên AWS sau này.
-* **Thực hành:** Xây dựng và test thành công serverless CRUD API, xác minh tính khả thi của kiến trúc backend dựa trên Lambda.
-
-#### Dự án (Team TheBois):
-* **Xác định ý tưởng:** Hình thành ý tưởng cốt lõi cho **GuardScript** — nền tảng phân phối mã nguồn bảo mật, giải quyết vấn đề tái phân phối code trái phép.
-* **Danh sách tính năng ban đầu:** Phân phối script được mã hóa, quản lý license, khóa phần cứng (HWID), cách ly theo workspace, kiểm soát truy cập.
-
-### 4. Vấn đề & Giải pháp
-* **Vấn đề:** DynamoDB yêu cầu thiết kế partition key và GSI cẩn thận ngay từ đầu, không linh hoạt như SQL.
-* **Giải pháp:** Nghiên cứu Single-Table Design vs Multi-Table Design. Quyết định dùng multi-table với GSI có mục tiêu rõ ràng cho GuardScript.
-
-### 5. Bài học rút ra
-* Kiến trúc serverless đòi hỏi tư duy khác so với thiết kế server truyền thống — statelessness, cold start và pricing pay-per-use đều ảnh hưởng đến quyết định kiến trúc.
-* Thiết kế schema DynamoDB phải hướng theo query, không phải hướng theo entity.
-
-### 6. Bước tiếp theo
-* Nghỉ Tết Nguyên đán (2 tuần).
-* Quay lại với scope dự án GuardScript đã được chốt.
-* Bắt đầu thiết kế kiến trúc và lập kế hoạch phát triển.
-
-
+### Kết quả đạt được trong tuần:
+- Hiểu rõ hơn về kiến thức nền tảng của AWS Lambda, bao gồm cách hàm được tạo, được kích hoạt và thực thi trong môi trường serverless.
+- Tìm hiểu được vai trò của API Gateway như một điểm vào cho ứng dụng serverless và cách dịch vụ này tích hợp với Lambda để cung cấp RESTful API.
+- Thực hành các thao tác cơ bản với DynamoDB như tạo bảng, thêm dữ liệu, truy vấn, cập nhật và xóa dữ liệu trong quá trình xử lý backend.
+- Nâng cao hiểu biết về thiết kế bảng trong DynamoDB, đặc biệt là vai trò của partition key và cách tổ chức dữ liệu để truy cập hiệu quả.
+- Hiểu rõ hơn luồng hoạt động giữa Lambda, API Gateway và DynamoDB, từ đó thấy được cách các dịch vụ serverless trong AWS phối hợp với nhau trong một kiến trúc backend hoàn chỉnh.
+- Xây dựng và kiểm thử thành công một REST API backend đơn giản bằng các dịch vụ serverless của AWS, bao gồm xử lý request, thực thi logic và thao tác dữ liệu.
+- Củng cố kỹ năng thực hành trong việc thiết kế hệ thống backend nhẹ, không cần quản lý máy chủ truyền thống.
+- Nâng cao hiểu biết tổng thể về kiến trúc serverless, quy trình triển khai và lợi ích về khả năng mở rộng, tính linh hoạt và giảm gánh nặng quản trị hạ tầng.
