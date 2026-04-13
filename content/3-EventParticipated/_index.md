@@ -38,6 +38,7 @@ During my internship, I participated in technical events to update my knowledge 
 &emsp;**Location:** Academy Hall FPT university  
 
 &emsp;**Role:** Attendee (FCJ Cloud Intern)
+
 ---
 
 ### [Event 4](3.4-Event4/)
