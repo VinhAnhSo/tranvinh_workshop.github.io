@@ -31,7 +31,20 @@ Trong quá trình thực tập, tôi đã tham gia các sự kiện chuyên môn
 ---
 
 ### [Sự kiện 3](3.3-Event3/)
+&emsp;**Tên sự kiện:** Secure Hybrid Access to S3 using VPC Endpoints  
 
+&emsp;**Thời gian:** 04/04/2026 
+
+&emsp;**Địa điểm:** Hội trường tầng 5, Đại học FPT
+
+&emsp;**Vai trò:** Người tham dự (Thực tập sinh FCJ Cloud)
 ---
 
 ### [Sự kiện 4](3.4-Event4/)
+&emsp;**Tên sự kiện:** AWS Networking, Security & IAM Workshop
+
+&emsp;**Thời gian:** 11/04/2026 
+
+&emsp;**Địa điểm:** Hội trường tầng 5, Đại học FPT
+
+&emsp;**Vai trò:** Người tham dự (Thực tập sinh FCJ Cloud)

@@ -8,7 +8,7 @@ pre: " <b> 3.4. </b> "
 | Item | Details |
 | --- | --- |
 | **Event Name** | AWS Networking, Security & IAM Workshop |
-| **Date & Time** | 11/14/2026 |
+| **Date & Time** | 11/4/2026 |
 | **Location** | Academy Hall FPT university |
 | **Role** | Attendee |
 

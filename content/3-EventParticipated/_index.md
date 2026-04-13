@@ -31,7 +31,20 @@ During my internship, I participated in technical events to update my knowledge 
 ---
 
 ### [Event 3](3.3-Event3/)
+&emsp;**Event Name:** Secure Hybrid Access to S3 using VPC Endpoints  
 
+&emsp;**Date & Time:** April 4, 2026  
+
+&emsp;**Location:** Academy Hall FPT university  
+
+&emsp;**Role:** Attendee (FCJ Cloud Intern)
 ---
 
 ### [Event 4](3.4-Event4/)
+&emsp;**Event Name:** AWS Networking, Security & IAM Workshop  
+
+&emsp;**Date & Time:** April 11, 2026  
+
+&emsp;**Location:** Academy Hall FPT university   
+
+&emsp;**Role:** Attendee (FCJ Cloud Intern)
